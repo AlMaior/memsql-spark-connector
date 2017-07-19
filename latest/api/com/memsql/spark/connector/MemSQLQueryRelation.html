@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">MemSQLQueryRelation</span><span class="params">(<span name="cluster">cluster: <a href="MemSQLCluster.html" class="extype" name="com.memsql.spark.connector.MemSQLCluster">MemSQLCluster</a></span>, <span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="databaseName">databaseName: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="sqlContext">sqlContext: <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.sql.SQLContext" class="extype" target="_top">SQLContext</a></span>, <span name="disablePartitionPushdown">disablePartitionPushdown: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.sql.sources.BaseRelation" class="extype" target="_top">BaseRelation</a> with <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.sql.sources.TableScan" class="extype" target="_top">TableScan</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <span class="name">MemSQLQueryRelation</span><span class="params">(<span name="cluster">cluster: <a href="MemSQLCluster.html" class="extype" name="com.memsql.spark.connector.MemSQLCluster">MemSQLCluster</a></span>, <span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="databaseName">databaseName: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="sqlContext">sqlContext: <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.sql.SQLContext" class="extype" target="_top">SQLContext</a></span>, <span name="disablePartitionPushdown">disablePartitionPushdown: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="enableStreaming">enableStreaming: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.sql.sources.BaseRelation" class="extype" target="_top">BaseRelation</a> with <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.sql.sources.TableScan" class="extype" target="_top">TableScan</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
@@ -89,7 +89,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="com.memsql.spark.connector.MemSQLQueryRelation#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(cluster:com.memsql.spark.connector.MemSQLCluster,query:String,databaseName:Option[String],sqlContext:org.apache.spark.sql.SQLContext,disablePartitionPushdown:Boolean):com.memsql.spark.connector.MemSQLQueryRelation"></a>
+      <a id="&lt;init&gt;(cluster:com.memsql.spark.connector.MemSQLCluster,query:String,databaseName:Option[String],sqlContext:org.apache.spark.sql.SQLContext,disablePartitionPushdown:Boolean,enableStreaming:Boolean):com.memsql.spark.connector.MemSQLQueryRelation"></a>
       <a id="&lt;init&gt;:MemSQLQueryRelation"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -97,10 +97,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">MemSQLQueryRelation</span><span class="params">(<span name="cluster">cluster: <a href="MemSQLCluster.html" class="extype" name="com.memsql.spark.connector.MemSQLCluster">MemSQLCluster</a></span>, <span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="databaseName">databaseName: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="sqlContext">sqlContext: <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.sql.SQLContext" class="extype" target="_top">SQLContext</a></span>, <span name="disablePartitionPushdown">disablePartitionPushdown: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span>
+        <span class="name">MemSQLQueryRelation</span><span class="params">(<span name="cluster">cluster: <a href="MemSQLCluster.html" class="extype" name="com.memsql.spark.connector.MemSQLCluster">MemSQLCluster</a></span>, <span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="databaseName">databaseName: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="sqlContext">sqlContext: <a href="https://spark.apache.org/docs/2.0.2/api/scala/index.html#org.apache.spark.sql.SQLContext" class="extype" target="_top">SQLContext</a></span>, <span name="disablePartitionPushdown">disablePartitionPushdown: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="enableStreaming">enableStreaming: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#com.memsql.spark.connector.MemSQLQueryRelation@&lt;init&gt;(cluster:com.memsql.spark.connector.MemSQLCluster,query:String,databaseName:Option[String],sqlContext:org.apache.spark.sql.SQLContext,disablePartitionPushdown:Boolean):com.memsql.spark.connector.MemSQLQueryRelation" title="Permalink" target="_top">
+      <a href="../../../../index.html#com.memsql.spark.connector.MemSQLQueryRelation@&lt;init&gt;(cluster:com.memsql.spark.connector.MemSQLCluster,query:String,databaseName:Option[String],sqlContext:org.apache.spark.sql.SQLContext,disablePartitionPushdown:Boolean,enableStreaming:Boolean):com.memsql.spark.connector.MemSQLQueryRelation" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -286,6 +286,23 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#com.memsql.spark.connector.MemSQLQueryRelation@disablePartitionPushdown:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.memsql.spark.connector.MemSQLQueryRelation#enableStreaming" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="enableStreaming:Boolean"></a>
+      <a id="enableStreaming:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enableStreaming</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#com.memsql.spark.connector.MemSQLQueryRelation@enableStreaming:Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
